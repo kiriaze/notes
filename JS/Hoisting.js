@@ -3,7 +3,7 @@ VARIABLE AND FUNCTION HOISTING IN JS
 
 Variables defined using the 'var' keyword and function declarations 
 are hoisted to the top of their scope (usually to the top of the 
-function where they are defined).
+function where they are defined), but not it's assignment.
 
 Function expressions are not.
 
