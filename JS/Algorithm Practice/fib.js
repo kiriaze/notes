@@ -1,3 +1,7 @@
+// ---------------------------
+// Write a function that returns the nth number in the fibonnaci sequence
+// ---------------------------
+
 // ANSWER WITH RECURSION
 // -----------------------------------------------
 var fib1 = (n) => (n < 2) ? n : fib1(n - 2) + fib1(n - 1); 
