@@ -1,3 +1,7 @@
+// ---------------------------
+// Write a function that determines whether a given input is a prime number
+// ---------------------------
+
 function isPrime(num) {
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
