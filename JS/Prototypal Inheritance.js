@@ -1,16 +1,23 @@
 /** 
 PROTOTYPAL INHERITANCE IN JS 
+*
+* In JS (prior to ES6) there is no class inheritance. Instead we have
+* prototype-based inheritance. Each object in JS has a property called
+* prototype (creating a chain of objects --> prototypes --> objects --> etc).
+* You can create an object and then specify another object as it's prototype.
+* In this way, you can inherit properties and methods from a parent on the
+* prototype chain.
+*
+* Note that classes were introduced in ES6, but these are syntactic sugar
+* on top of prototype inheritance.
 
-In JS, objects inherit properties and methods from their prototype parents. 
-This is a parent-child relationship between objects. This is how the built-in
-methods in JS for arrays, objects, strings, etc. work - they inherit from the top-level
-parent Object for each data type. We can use this chain of parents to create inheritance models.
-*/
+* Constructor functions begin with a capital letter. These functions along
+* with props and methods defined on their prototypes is the pattern for
+* inheritance in JS. These constructor functions + their prototype props
+* and methods serve as class definitions. calling new on them creates
+* instances of the class.
 
-/** 
-Creating our own prototype inheritance with a constructor function 
-
-With ES6, constructors have been replaced with the class syntax.
+Note: with ES6, constructors have been replaced with the class syntax.
 However, under the hood, classes still use prototypal inheritance
 to build class methods and properties.
 */
